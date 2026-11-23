@@ -1,0 +1,19 @@
+.github-icon {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #202638;
+}
+
+.github-icon img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+}
+
+.github-icon:hover {
+  background: #405fe8;
+}

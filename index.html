@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>이민서 | Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+
   <style>
     body {
       max-width: 900px;
@@ -25,11 +27,18 @@
     a { color: #405fe8; }
   </style>
 </head>
+
 <body>
   <header>
-    <a href="#projects">프로젝트</a> ·
-    <a href="#about">소개</a> ·
-    <a href="https://github.com/minseo9904">GitHub</a>
+    <a
+      class="github-icon"
+      href="https://github.com/minseo9904"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="내 GitHub 프로필 열기"
+    >
+      <img src="/assets/github.svg" alt="">
+    </a>
   </header>
 
   <main>
@@ -49,13 +58,17 @@
         <p>프로젝트 소개를 간단히 적으세요.</p>
         <p>Python · GitHub Actions</p>
 
-        <a href="projects/notice-bot.html">프로젝트 자세히 보기 →</a>
         <br>
-        <a href="https://github.com/minseo9904/저장소이름">
-          GitHub 저장소 보기
+        <a
+          class="github-icon"
+          href="https://github.com/seongminhong497-cell/koreatech-notice-bot"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="학교 공지 브리핑 봇 저장소 열기"
+        >
+          <img src="/assets/github.svg" alt="">
         </a>
       </article>
-
     </section>
 
     <section id="about">
