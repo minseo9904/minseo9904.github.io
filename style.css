@@ -21,3 +21,17 @@
   background: #333333;
   color: white;
 }
+
+# 코드 배경색, 글자색 수정
+pre {
+  overflow-x: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #263022;
+  color: #f4f5ee;
+}
+
+pre code {
+  font-family: Consolas, monospace;
+  line-height: 1.6;
+}
