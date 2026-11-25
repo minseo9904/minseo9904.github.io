@@ -22,16 +22,77 @@
   color: white;
 }
 
-# 코드 배경색, 글자색 수정
-pre {
-  overflow-x: auto;
-  padding: 20px;
+/* 코드 배경색, 글자색 수정 */
+.code-window {
+  overflow: hidden;
+  border: 1px solid #3c3c3c;
   border-radius: 12px;
-  background: #263022;
-  color: #f4f5ee;
+  background: #bdbcbc;
 }
 
-pre code {
+.code-title {
+  padding: 10px 16px;
+  border-bottom: 1px solid #3c3c3c;
+  background: #252526;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.code-window pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+.code-window pre code.hljs {
+  display: block;
+  padding: 20px;
+  background: #1e1e1e;
   font-family: Consolas, monospace;
+  font-size: 14px;
   line-height: 1.6;
+}
+
+
+/* 프로젝트 설명과 시연 화면을 좌우로 배치 */
+.project-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.7fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.project-content,
+.demo-panel {
+  min-width: 0;
+}
+
+/* 오른쪽 시연 화면을 스크롤 중에도 화면에 유지 */
+.demo-panel {
+  position: sticky;
+  top: 24px;
+}
+
+.demo-frame {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  min-height: 600px;
+  border: 1px solid #DDE3D2;
+  border-radius: 14px;
+  background: white;
+}
+
+/* 화면이 좁으면 설명 아래에 시연 화면 배치 */
+@media (max-width: 850px) {
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-panel {
+    position: static;
+  }
+
+  .demo-frame {
+    height: 700px;
+  }
 }
